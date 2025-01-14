@@ -81,7 +81,8 @@ const App = () => {
                   element={
                     <Layout
                       showSidebar={false}
-                      header=title: appName,
+                      header={{
+                        title: appName,
                         navigation: [
                           { label: "Home", href: "/" },
                           { label: "About", href: "/about" },
@@ -91,6 +92,7 @@ const App = () => {
                         showNotifications: false,
                         showUserMenu: false,
                         showThemeToggle: true,
+                      }}
                     />
                   }
                 >
