@@ -28,9 +28,9 @@ export default function IndexPage() {
       {/* Hero Section */}
       <motion.section 
         className="text-center space-y-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
+        initial=opacity: 0
+        animate=opacity: 1
+        transition=duration: 0.8
       >
         <Badge variant="secondary" className="mb-4">
           Welcome to Your New App
@@ -53,7 +53,7 @@ export default function IndexPage() {
         variants={staggerContainer}
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true }}
+        viewport=once: true
         className="grid gap-8 md:grid-cols-3"
       >
         <motion.div variants={fadeInUp}>
@@ -103,7 +103,7 @@ export default function IndexPage() {
       <motion.section
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true }}
+        viewport=once: true
         className="space-y-8"
       >
         <motion.div variants={fadeInUp} className="text-center">
@@ -124,11 +124,60 @@ export default function IndexPage() {
         </motion.div>
       </motion.section>
 
+      {/* Pricing Section */}
+      <motion.section
+        initial="initial"
+        whileInView="animate"
+        viewport=once: true
+        className="space-y-8"
+      >
+        <motion.div variants={fadeInUp} className="text-center">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+            Our Pricing Plans
+          </h2>
+          <p className="mx-auto mt-4 max-w-[700px] text-gray-500 md:text-xl dark:text-gray-400">
+            Choose the plan that suits you best.
+          </p>
+        </motion.div>
+
+        <motion.div 
+          variants={staggerContainer}
+          className="grid gap-4 md:grid-cols-3"
+        >
+          <Card>
+            <CardContent className="pt-6">
+              <h3 className="text-xl font-bold">Basic</h3>
+              <p className="text-muted-foreground">
+                €20/month
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <h3 className="text-xl font-bold">Pro</h3>
+              <p className="text-muted-foreground">
+                €50/month
+              </p>
+            </CardContent>
+          </Card>
+
+          <Card>
+            <CardContent className="pt-6">
+              <h3 className="text-xl font-bold">Enterprise</h3>
+              <p className="text-muted-foreground">
+                €250/month
+              </p>
+            </CardContent>
+          </Card>
+        </motion.div>
+      </motion.section>
+
       {/* CTA Section */}
       <motion.section
         initial="initial"
         whileInView="animate"
-        viewport={{ once: true }}
+        viewport=once: true
         className="text-center space-y-6"
       >
         <motion.div variants={fadeInUp}>
