@@ -17,6 +17,7 @@ import { Layout } from "./layout";
 import Index from "./pages/index";
 import NotFound from "./pages/NotFound";
 import DashboardPage from "./pages/dashboard/DashboardPage";
+import PricingPage from "./pages/pricing";
 import { useTheme } from "./theme/use-theme";
 
 const appName = "My app";
@@ -80,8 +81,7 @@ const App = () => {
                   element={
                     <Layout
                       showSidebar={false}
-                      header={{
-                        title: appName,
+                      header=title: appName,
                         navigation: [
                           { label: "Home", href: "/" },
                           { label: "About", href: "/about" },
@@ -91,11 +91,11 @@ const App = () => {
                         showNotifications: false,
                         showUserMenu: false,
                         showThemeToggle: true,
-                      }}
                     />
                   }
                 >
                   <Route index element={<Index />} />
+                  <Route path="pricing" element={<PricingPage />} />
                   <Route path="*" element={<NotFound />} />
                 </Route>
 
