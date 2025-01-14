@@ -1,11 +1,11 @@
-import { motion } from "framer-motion"
-import { Card, CardContent } from "@/components/ui/card"
+import { motion } from "framer-motion";
+import { Card, CardContent } from "@/components/ui/card";
 
 const fadeInUp = {
   initial: { opacity: 0, y: 20 },
   animate: { opacity: 1, y: 0 },
   transition: { duration: 0.5 }
-}
+};
 
 const staggerContainer = {
   animate: {
@@ -13,7 +13,7 @@ const staggerContainer = {
       staggerChildren: 0.1
     }
   }
-}
+};
 
 export default function PricingPage() {
   return (
@@ -66,5 +66,5 @@ export default function PricingPage() {
         </motion.div>
       </motion.section>
     </div>
-  )
+  );
 }
