@@ -21,7 +21,7 @@ export default function PricingPage() {
       <motion.section
         initial="initial"
         whileInView="animate"
-        viewport=once: true
+        viewport={{ once: true }}
         className="space-y-8"
       >
         <motion.div variants={fadeInUp} className="text-center">
